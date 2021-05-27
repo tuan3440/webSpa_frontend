@@ -72,6 +72,39 @@ export default class Order extends Component {
 
     }
 
+    handleDelete(index) {
+
+        console.log(index)
+        confirmAlert({
+            title: 'Thay đổi trạng tái đơn hàng',
+            message: 'Bạn có chắc chắn muốn xóa đơn hàng?',
+            buttons: [
+                {
+                    label: 'Yes',
+                    onClick: () => this.Delete(index)
+                },
+                {
+                    label: 'No'
+                }
+            ]
+        });
+
+    }
+
+    Delete(index) {
+        let data = {
+            _id: this.state.orders[index]._id,
+        }
+        axios.delete("/order/"+ data._id).then(res => {
+            let orders = this.state.orders;
+            orders.splice(index, 1)
+            this.setState({
+                orders: orders
+            })
+
+        })
+    }
+
     Cancel(index) {
         let data = {
             _id: this.state.orders[index]._id,
@@ -167,8 +200,11 @@ export default class Order extends Component {
                                                     <button type="button" class="btn btn-info" style={{ marginRight: '5px' }} data-toggle="modal" data-target="#detailOrder"
                                                         onClick={(e) => this.preDetail(e, index)}>Detail</button>
 
-                                                    {order.status === 0 && <button type="button" class="btn btn-danger"
+                                                    {(order.status === 0) && <button type="button" class="btn btn-danger"
                                                         onClick={() => this.handleCanel(index)}>Cancel</button>}
+
+                                                    {(order.status === 2 || order.status === 3) && <button type="button" class="btn btn-danger"
+                                                                                     onClick={() => this.handleDelete(index)}>Delete</button>}
                                                 </form>
                                             </td>
                                         </tr>

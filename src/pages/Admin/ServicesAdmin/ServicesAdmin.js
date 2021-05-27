@@ -169,7 +169,7 @@ export default class ServicesAdmin extends Component {
                 <div>
                     <ToastContainer />
                     <div className="container-fluid" style={{ marginBottom: "70px" }}>
-                        <h2>Services</h2>
+                        <h2>Dịch vụ</h2>
                         <br />
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addCategory"
                             onClick={this.toggle1}><i class="fas fa-plus"></i>&ensp;New Service</button>

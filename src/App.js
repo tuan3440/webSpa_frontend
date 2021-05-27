@@ -29,6 +29,7 @@ import HistoryBooking from './pages/User/HistoryBooking/HistoryBooking';
 import Order from './pages/User/Order/Oder';
 import Profile from './pages/User/Profile/Profile';
 import Product from "./pages/Admin/Product/Product";
+import DetailService from "./pages/Services/DetailService";
 
 
 
@@ -86,6 +87,7 @@ function App() {
                 </PublicRouter>
 
                 <Route path="/product/:id" exact component={Detail} />
+                <Route path="/service/:id" exact component={DetailService} />
 
                 <PrivateRoute path='/cart'>
                   <Cart />

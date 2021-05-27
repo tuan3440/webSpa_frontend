@@ -106,10 +106,10 @@ export default class Category extends Component {
                 <div class="category-admin">
 
 
-                    <h2>Category</h2>
+                    <h2>Thể loại</h2>
                     <br />
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addCategory"
-                        onClick={(e) => this.setState({ newCategory: null })}><i class="fas fa-plus"></i>&ensp;Add Category</button>
+                        onClick={(e) => this.setState({ newCategory: null })}><i class="fas fa-plus"></i>&ensp;Thêm loại</button>
 
 
                     <table class="table" id="">

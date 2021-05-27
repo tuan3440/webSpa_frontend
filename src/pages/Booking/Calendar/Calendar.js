@@ -157,15 +157,7 @@ class Calendar extends Component {
               <h5 className="top-leftCalendar address">
                 ADDRESS
             </h5>
-              <span>184 Main Street East Perl Habour 8007</span>
-            </div>
-            <div className="mid-leftCalendar">
-              <h5>RESERVATION & INQUIRY</h5>
-              <span>
-                <p>Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
-                <a href="#"><small>Call 1-677-124-44227</small></a>
-              </span>
-
+              <span>184 Lê Thanh Nghị Hai Bà Trưng Hà Nội</span>
             </div>
             <div className="bot-leftCalendar">
               <h5>CONNECT TO US</h5>

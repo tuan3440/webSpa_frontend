@@ -42,46 +42,7 @@ export default class Services extends Component {
                         <h2>DỊCH VỤ</h2>
                     </div>
                 </div>
-                <Container style={{ marginTop: '50px' }}>
-                    <Row>
-                        <Col lg="6">
-                            <div className="secret_text">
-                                <h2>Gói bạc</h2>
-                                <p>Drinking vinegar stumptown yr pop-up artisan sunt. Deep v
-                                cliche lomo biodiesel Neutra selfies. Shorts fixie consequat
-                                flexitarian four loko tempor duis single-origin coffee. Banksy,
-                                elit small batch freegan sed. Aenean massa. Cum sociis natoque
-                        penatibus eur ridiculus mus</p>
-                                <a href="ok"></a>
-                            </div>
-                        </Col>
-                        <Col lg="6">
-                            <div className="secret_img"></div>
-                        </Col>
-                    </Row>
-                    <Row style={{ marginTop: '30px' }}>
-                        <Col lg="6">
-                            <div className="secret_img_second"></div>
-                        </Col>
-                        <Col lg="6">
-                            <div className="secret_text">
-                                <h2>Gói vàng</h2>
-                                <p>Drinking vinegar stumptown yr pop-up artisan sunt. Deep v
-                                cliche lomo biodiesel Neutra selfies. Shorts fixie consequat
-                                flexitarian four loko tempor duis single-origin coffee. Banksy,
-                                elit small batch freegan sed. Aenean massa. Cum sociis natoque
-                        penatibus eur ridiculus mus</p>
-                                <a href="ok"></a>
-                            </div>
-                        </Col>
-                    </Row>
-                </Container>
-                <div className="overlay_background" style={{ marginTop: '40px', backgroundImage: "url(https://themegoods-cdn-pzbycso8wng.stackpathdns.com/grandspa/demo/wp-content/uploads/2017/05/p1270064.jpg)" }} >
-                    <div className='overlay_background1'>
-                        <h2>Với nhiều năm kinh nghiệm.</h2>
-                        <div className="comex">Chúng tôi sẽ mang lại cho bạn cảm giác thoả mái nhất.</div>
-                    </div>
-                </div>
+
                 <Container>
                     <Row style={{ marginBottom: '30px', marginTop: '40px' }}>
                         {cardService.length && <OwlCarousel
@@ -98,7 +59,7 @@ export default class Services extends Component {
                                         <div className="serviceContent">
                                             <h3>{item.name}</h3>
                                             <p>{item.description}</p>
-                                            <Link to="/membershipcards" className="readmore">VIEW PRICING</Link>
+                                            <Link to={`/service/${item._id}`} className="readmore">Xem chi tiết</Link>
                                         </div>
                                     </div>
                                 </Col>

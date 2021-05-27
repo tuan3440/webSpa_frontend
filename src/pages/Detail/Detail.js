@@ -20,25 +20,25 @@ function Detail(props) {
     const [amount, setAmount] = useState(1)
     const cart = useContext(CartContext)
 
-    const [related, setrelated] = useState(
-        [
-            {
-                name: "Body Lotion",
-                price: "59999",
-                img: "https://themegoods-cdn-pzbycso8wng.stackpathdns.com/grandspa/demo/wp-content/uploads/2017/06/product-10-600x600.jpg"
-            },
-            {
-                name: "Organic Bath",
-                price: "99999",
-                img: "https://themegoods-cdn-pzbycso8wng.stackpathdns.com/grandspa/demo/wp-content/uploads/2017/06/product-4-600x600.jpg"
-            },
-            {
-                name: "Organic Scrub",
-                price: "79999",
-                img: "https://themegoods-cdn-pzbycso8wng.stackpathdns.com/grandspa/demo/wp-content/uploads/2017/06/product-2-600x600.jpg"
-            }
-        ]
-    )
+    // const [related, setrelated] = useState(
+    //     [
+    //         {
+    //             name: "Body Lotion",
+    //             price: "59999",
+    //             img: "https://themegoods-cdn-pzbycso8wng.stackpathdns.com/grandspa/demo/wp-content/uploads/2017/06/product-10-600x600.jpg"
+    //         },
+    //         {
+    //             name: "Organic Bath",
+    //             price: "99999",
+    //             img: "https://themegoods-cdn-pzbycso8wng.stackpathdns.com/grandspa/demo/wp-content/uploads/2017/06/product-4-600x600.jpg"
+    //         },
+    //         {
+    //             name: "Organic Scrub",
+    //             price: "79999",
+    //             img: "https://themegoods-cdn-pzbycso8wng.stackpathdns.com/grandspa/demo/wp-content/uploads/2017/06/product-2-600x600.jpg"
+    //         }
+    //     ]
+    // )
 
     const [activeTab, setActiveTab] = useState('1');
 
@@ -212,106 +212,11 @@ function Detail(props) {
                             </div>
                         </Col>
                     </Row>}
-                    <Container>
-                        <Row className="detail-description-review">
-
-                            <div>
-                                <Nav tabs>
-                                    <NavItem>
-                                        <NavLink
-                                            className={classnames({ active: activeTab === '1' })}
-                                            onClick={() => { toggle('1'); }}
-                                        >
-                                            Description
-                                        </NavLink>
-                                    </NavItem>
-                                    <NavItem>
-                                        <NavLink
-                                            className={classnames({ active: activeTab === '2' })}
-                                            onClick={() => { toggle('2'); }}
-                                        >
-                                            Review
-                                        </NavLink>
-                                    </NavItem>
-                                </Nav>
-                                <TabContent activeTab={activeTab}>
-                                    <TabPane tabId="1">
-                                        <Row>
-                                            <Col sm="12">
-                                                {/* <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Aliquam et elit eu nunc rhoncus viverra quis at felis et netus et malesuada fames ac turpis egestas. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p> */}
-                                                <div dangerouslySetInnerHTML={{ __html: product?.description }} />
-                                            </Col>
-                                        </Row>
-                                    </TabPane>
-                                    <TabPane tabId="2">
-                                        <Col>
-                                            {dataCmt.length !== 0 && dataCmt.map((dataComment, index) => (
-                                                    <Row>
-                                                        <div class="media  p-3">
-
-                                                            <div class="media-body" >
-                                                                <div className="avt-name">
-                                                                    <img src="https://tgt.onecmscdn.com/thumbs/1000x0/2018/05/28/huong-le-ao-dai7-15267392452641459322824(1).jpg" alt="John Doe" style={{
-                                                                        borderRadius: "50%", maxWidth: '60px', maxHeight: '60px', marginRight: '10px'
-                                                                    }} />
-                                                                    <h4>{dataComment.user?.firstName}<small><i> đã bình luận vào &nbsp;
-                                                                        <Moment format="YYYY/MM/DD HH:mm">
-                                                                            {dataComment.createAt}
-                                                                        </Moment></i></small></h4>
-                                                                </div>
-                                                                <div key={index} style={{ display: `${cmtShow[index]}` }}>
-                                                                    <p> <Rating name="read-only" value={parseInt(dataComment.rate)} readOnly /></p>
-                                                                    <p>{dataComment.content}</p>
-                                                                </div>
-                                                                <div key={index} style={{ display: `${btnShow[index]}` }} >
-                                                                    <Button color="primary" key={index} onClick={() => handleShow(index)}>Chỉnh sửa</Button>
-                                                                    <Button color="danger" key={index} onClick={() => handleDeleteCmt(index)}>Xóa</Button>
-                                                                </div>
-                                                                <div key={index} style={{ display: `${show[index]}` }} >
-                                                                    <Input value={dataComment.content} key={index} type="text" onChange={(e) => changeCmt(e, index)} />
-                                                                    <Rating value={star} name="simple-controlled" onChange={(event, newValue) => setStar(newValue)} />
-                                                                    <Button color="primary" key={index} onClick={() => handleEditCmtSubmit(index)}>Chốt</Button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                    </Row>
-                                                )
-                                            )}
-                                            <div style={{ display: `${addCmt}` }}>
-                                                <Input defaultValue='' type="textarea" onChange={(e) => changeNewCmt(e)} />
-                                                <div className="btn-rt">
-                                                    <Button color="primary" onClick={() => handleAddNewCmt()}>Bình luận</Button>
-                                                    <Rating value={starNew} name="simple-controlled two" onChange={(event, newValue) => changeNewCmtRate(newValue)} />
-                                                </div>
-                                            </div>
-                                        </Col>
-                                    </TabPane>
-                                </TabContent>
-                            </div>
-
-                        </Row>
-                    </Container>
 
 
                     <hr></hr>
 
 
-                    <h4 style={{ textAlign: 'center', marginTop: '40px', color: '#333333' }}>Related products</h4>
-
-                    <Row>
-                        {related.map((item, index) => (
-                            <Col md="4" style={{ marginTop: '20px' }} key={index}>
-                                <Link to={"/detail"} className="product">
-                                    <div style={{ display: 'flex', justifyContent: 'center' }}>
-                                        <img src={item.img} alt="product"></img>
-                                    </div>
-                                    <h3>{item.name}</h3>
-                                    <p>{vndong(item.price)}đ</p>
-                                </Link>
-                            </Col>
-                        ))}
-                    </Row>
                 </Container>
             </div>
         </div>

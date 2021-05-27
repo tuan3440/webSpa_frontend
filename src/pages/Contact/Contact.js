@@ -13,11 +13,7 @@ export default class Contact extends Component {
 				</div>
 
 				<div className="text-contact">
-					<h2 style={{ textAlign: "center", fontSize: '18px', fontWeight: '700' }}>Our Commitment</h2>
-					<h3>“Breathe in peace, breathe out stress.
-					Relaxing can bring relief to much of what ails you. In our stressful and often negative world,
-					your decision to make relaxing a priority will help you navigate, handle, and minimize stress”
-					 </h3>
+					<h2 style={{ textAlign: "center", fontSize: '18px', fontWeight: '700' }}>Địa chỉ của chúng tôi</h2>
 				</div>
 
 				<div className="contact-map">
@@ -59,13 +55,7 @@ export default class Contact extends Component {
 								<p className="contact-box-p-1">184 Main Street East Perl Habour 8007</p>
 							</li>
 							<li>
-								<h2 className="contact-box-h2-2">Reservation & Inquiry</h2>
-								<p className="contact-box-p-2">Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus,
-								tellus eget condimentum rhoncus, sem quam semper libero,
-                				 sit amet adipiscing sem neque sed ipsum.</p>
-							</li>
-							<li>
-								<p className="contact-box-p-3">Call 1-677-124-44227</p>
+								<p className="contact-box-p-1">Số điện thoại liên hệ 123456777</p>
 							</li>
 
 							<li>
@@ -86,7 +76,7 @@ export default class Contact extends Component {
 
 					<div className="col-sm-6 box2">
 						<h2 className="contact-box2-h2">Contact Us</h2>
-						<p className="contact-box2-p">Come experience the secrets of relaxation</p>
+						<p className="contact-box2-p">Để có những giờ phút thư giãn nhất</p>
 						<input type="text" class="form-control" id="name" placeholder="Name*" />
 						<input type="text" class="form-control" id="email" placeholder="Email Address*" />
 						<textarea rows={5} type="text" class="form-control" id="message" placeholder="Your Message*"></textarea>

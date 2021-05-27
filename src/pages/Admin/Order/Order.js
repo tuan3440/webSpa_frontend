@@ -111,7 +111,7 @@ export default class Order extends Component {
 
 
                 <div class="order-admin">
-                    <h2>Order</h2>
+                    <h2>Hóa đơn</h2>
                     <br />
                     <ToastContainer />
                     <div class="form-inline">

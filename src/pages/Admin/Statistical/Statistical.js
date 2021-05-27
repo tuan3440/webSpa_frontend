@@ -22,19 +22,6 @@ export default class Statistical extends Component {
 
         });
 
-        axios.get("/service/stastic").then(res => {
-            this.setState({
-                stasticBill: res.data
-            });
-
-        });
-
-        axios.get("/service/stasticCount").then(res => {
-            this.setState({
-                bestService: res.data
-            });
-
-        });
 
         axios.get("/order/stasticCount").then(res => {
             this.setState({
@@ -42,6 +29,18 @@ export default class Statistical extends Component {
             });
 
         });
+
+        axios.get("/bill/stastic").then(res => {
+            this.setState({
+                stasticBill: res.data
+            })
+        })
+
+        axios.get("/bill/stasticCount").then(res => {
+            this.setState({
+                bestService: res.data
+            })
+        })
 
 
 
@@ -52,7 +51,8 @@ export default class Statistical extends Component {
            <LayoutTableAdmin>
                <div>
                    <h1 className="text-danger" style={{textAlign: "center"}}>THỐNG KÊ</h1>
-                   <div style={{ width: '100%' }}>
+
+                       {this.state.stasticOrder && <div style={{ width: '100%' }}>
                        <ResponsiveContainer width="100%" height={200}>
                            <LineChart
                                width={500}
@@ -72,10 +72,13 @@ export default class Statistical extends Component {
                                <Line connectNulls type="monotone" dataKey="total" stroke="#8884d8" fill="#8884d8" />
                            </LineChart>
                        </ResponsiveContainer>
-                       <h2 style={{textAlign: 'center'}}>Doanh thu bán hàng theo tháng</h2>
-                   </div>
+                           <h2 style={{textAlign: 'center'}}>Doanh thu bán hàng theo tháng</h2>
+                       </div>
+                       }
+
+
                    <hr/>
-                   <div style={{ width: '100%' }}>
+                   {this.state.stasticBill && <div style={{ width: '100%' }}>
                        <ResponsiveContainer width="100%" height={200}>
                            <LineChart
                                width={500}
@@ -95,12 +98,16 @@ export default class Statistical extends Component {
                                <Line connectNulls type="monotone" dataKey="total" stroke="#8884d8" fill="#8884d8" />
                            </LineChart>
                        </ResponsiveContainer>
-                   </div>
                        <h2 style={{textAlign: 'center'}}>Doanh thu từ dịch vụ làm đẹp theo tháng</h2>
+                   </div>
+
+                   }
+
                        <br/>
                        <hr/>
                        <div className="row">
                            <div className="col-sm-2"></div>
+                           {this.state.bestService &&
                            <div className="col-sm-4">
                                <p className="text-danger">Dịch vụ hot nhất ({this.state.bestService[1]} lần)</p>
                                <div className="card" style={{width: "100%"}}>
@@ -110,6 +117,8 @@ export default class Statistical extends Component {
                                    </div>
                                </div>
                            </div>
+                           }
+                           {this.state.bestProduct &&
                            <div className="col-sm-4">
                                <p className="text-danger">Sản phẩm bán chạy nhất(Đã bán {this.state.bestProduct[1]})</p>
                                <div className="card" style={{width: "18rem"}}>
@@ -119,6 +128,8 @@ export default class Statistical extends Component {
                                    </div>
                                </div>
                            </div>
+                           }
+
                        </div>
                </div>
 

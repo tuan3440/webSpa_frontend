@@ -14,8 +14,7 @@ export default class Footer extends Component {
                 </div>
                 <div className="content">
                   <span>
-                    Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica.
-                  </span>
+Meh synth Schlitz, tempor duis cà phê nguồn gốc đơn lẻ cấp độ tiếp theo dân tộc fingerstache fanny pack nostrud. Buồng ảnh hoạt hình 8-bit hella, PBR 3 con sói mặt trăng râu Helvetica                  </span>
                 </div>
               </div>
             </div>

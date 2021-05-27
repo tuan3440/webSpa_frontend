@@ -117,7 +117,7 @@ export default class Bill extends Component {
                 <div>
                     <ToastContainer />
                     <div className="container-fluid" style={{ marginBottom: "70px" }}>
-                        <h2>Bills</h2>
+                        <h2>Đơn đặt lịch</h2>
 
                         <div class="form-inline">
                             <label for="sel1">Trạng thái đặt lịch:</label> &nbsp;
@@ -125,7 +125,6 @@ export default class Bill extends Component {
                                 <option value='all'>Tất cả</option>
                                 <option value={0}>Chờ xử lý</option>
                                 <option value={1}>Chấp nhận lịch đặt</option>
-                                <option value={2}>Chờ khách tới</option>
                                 <option value={3}>Thành công</option>
                                 <option value={4}>Đã huỷ</option>
                             </select>
@@ -158,10 +157,8 @@ export default class Bill extends Component {
                                         <td style={{ color: '#eda84a' }}>{vndong(bill.totalMoney)}đ</td>
                                         <td>
                                             <select class="select" class="form-control" value={bill.status} onChange={(e) => this.handleStatus(e, index)} >
-                                                <option value='all'>Tất cả</option>
                                                 <option value={0}>Chờ xử lý</option>
                                                 <option value={1}>Chấp nhận lịch đặt</option>
-                                                <option value={2}>Chờ khách tới</option>
                                                 <option value={3}>Thành công</option>
                                                 <option value={4}>Đã huỷ</option>
                                             </select>

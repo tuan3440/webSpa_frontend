@@ -101,9 +101,6 @@ export default class HistoryBooking extends Component {
                                 <li className={classNames('nav-item', { 'active': filter == 1 })}>
                                     <span onClick={() => this.handleFilter(1)} class="nav-link" href="#">Đã chấp nhận {filter == 1 && `(${filterBills.length})`} </span>
                                 </li>
-                                <li className={classNames('nav-item', { 'active': filter == 2 })}>
-                                    <span onClick={() => this.handleFilter(2)} class="nav-link" href="#">Đợi ngày đã book {filter == 2 && `(${filterBills.length})`} </span>
-                                </li>
                                 <li className={classNames('nav-item', { 'active': filter == 3 })} >
                                     <span onClick={() => this.handleFilter(3)} class="nav-link" href="#">Thành công  {filter == 3 && `(${filterBills.length})`} </span>
                                 </li >
@@ -138,7 +135,6 @@ export default class HistoryBooking extends Component {
                                             <td style={{ color: '#eda84a' }}>{vndong(bill.totalMoney)}đ</td>
                                             {bill.status === 0 && <td  >Chờ xử lý</td>}
                                             {bill.status === 1 && <td  >Đã được chấp nhận</td>}
-                                            {bill.status === 2 && <td >Đang chờ ngày sử dụng dịch vụ</td>}
                                             {bill.status === 3 && <td >Thành công</td>}
                                             {bill.status === 4 && <td >Đã huỷ</td>}
                                             <td width="15%">

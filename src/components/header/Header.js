@@ -74,14 +74,14 @@ class Header1 extends Component {
 									<div class="collapse navbar-collapse " id="navbarNav">
 										<ul class="navbar-nav">
 											<li class="nav-item active">
-												<Link class="nav-link" to="/">HOME</Link>
+												<Link class="nav-link" to="/">Trang chủ</Link>
 											</li>
 											<li class="nav-item">
-												<Link class="nav-link" to="/booking">BOOKING</Link>
+												<Link class="nav-link" to="/booking">Đặt lịch</Link>
 											</li>
-											{/*<li class="nav-item">*/}
-											{/*	<Link class="nav-link" to="/services">SERVICES</Link>*/}
-											{/*</li>*/}
+											<li class="nav-item">
+												<Link class="nav-link" to="/services">Dịch vụ</Link>
+											</li>
 											{/* <li class="nav-item dropdown">
 						        <Link class="nav-link dropdown-toggle" to="/" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						          SHOP
@@ -94,18 +94,18 @@ class Header1 extends Component {
 						        </div>
 						      </li> */}
 											<li class="nav-item">
-												<Link class="nav-link" to="/shop">SHOP</Link>
+												<Link class="nav-link" to="/shop">Cửa hàng</Link>
 											</li>
 
 
 
 
 											<li class="nav-item">
-												<Link class="nav-link" to="/about">ABOUT US</Link>
+												<Link class="nav-link" to="/about">Về chúng tôi</Link>
 											</li>
 
 											<li class="nav-item">
-												<Link class="nav-link" to="/contact">CONTACT</Link>
+												<Link class="nav-link" to="/contact">Liên lạc</Link>
 											</li>
 
 											{/*<li class="nav-item">*/}
@@ -124,7 +124,7 @@ class Header1 extends Component {
 
 
 						<div className="logo-right">
-							<Link to="/booking" className="text-book-menu">BOOK</Link>
+							<Link to="/booking" className="text-book-menu">Đặt lịch</Link>
 							{/* <a href="/" >BOOK</a> */}
 
 							<Link class="div0" to="/cart">
@@ -153,11 +153,11 @@ class Header1 extends Component {
 									Hello {user.firstName}
 								</Link>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-									<Link class="dropdown-item" to="/user/profile"><i class="fas fa-user-edit"></i>&nbsp; Profile</Link>
-									<Link class="dropdown-item" to="/user/changepass"><i class="fas fa-key"></i>&nbsp; Change Password</Link>
-									<Link class="dropdown-item" to="/user/historyBooking"><i class="fas fa-bookmark"></i>&nbsp; History Booking</Link>
-									<Link class="dropdown-item" to="/user/order"><i class="fas fa-history"></i>&nbsp; History Order</Link>
-									<Link class="dropdown-item" to="/" onClick={() => user.Logout()}><i class="fas fa-sign-out-alt"></i>&nbsp; Logout</Link>
+									<Link class="dropdown-item" to="/user/profile"><i class="fas fa-user-edit"></i>&nbsp; Thông tin cá nhân</Link>
+									<Link class="dropdown-item" to="/user/changepass"><i class="fas fa-key"></i>&nbsp; Đổi mật khẩu</Link>
+									<Link class="dropdown-item" to="/user/historyBooking"><i class="fas fa-bookmark"></i>&nbsp; Lịch sử đặt lịch</Link>
+									<Link class="dropdown-item" to="/user/order"><i class="fas fa-history"></i>&nbsp; Lịch sử đơn hàng</Link>
+									<Link class="dropdown-item" to="/" onClick={() => user.Logout()}><i class="fas fa-sign-out-alt"></i>&nbsp; Đăng xuất</Link>
 								</div>
 							</>
 							}

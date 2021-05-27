@@ -61,7 +61,7 @@ export default class Home extends Component {
                                         <div className="serviceContent">
                                             <h3>{item.name}</h3>
                                             <p>{item.description}</p>
-                                            <Link to="/membershipcards" className="readmore">VIEW PRICING</Link>
+                                            <Link to={`/service/${item._id}`} className="readmore">Xem chi tiết</Link>
                                         </div>
                                     </div>
                                 </Col>
@@ -79,10 +79,7 @@ export default class Home extends Component {
                         Giúp bạn có giây phút thư giãn tốt nhất"</h3>
                         </Col>
                         <Col style={{ color: '#666666', fontFamily: 'inherit', fontSize: '16.5px', fontWeight: '450', padding: '55px 20px 55px 20px' }}>
-                            <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
-                            arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
-                            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur`
-                        ridiculus mus.</p>
+                            <p>Chỉ cần cho đến chân và phân loại không có chuối, thịt bò có chức năng, không tốn kém. Trên thực tế, Justo, rhoncus ut, unsatdiet a, venenatis vitae, justo. When Pulls Rays Super Bowl núi nascetur` mollis.</p>
                         </Col>
                     </Row>
 
@@ -98,11 +95,7 @@ export default class Home extends Component {
                         <Col lg="6">
                             <div className="secret_text">
                                 <h2>Bí mật thư giãn</h2>
-                                <p>Drinking vinegar stumptown yr pop-up artisan sunt. Deep v
-                                cliche lomo biodiesel Neutra selfies. Shorts fixie consequat
-                                flexitarian four loko tempor duis single-origin coffee. Banksy,
-                                elit small batch freegan sed. Aenean massa. Cum sociis natoque
-                        penatibus eur ridiculus mus</p>
+                                <p>Uống dấm stumptown y pop-up là nghệ nhân. Cả selfie deep V sáo rỗng lomo biodiesel. Bốn Loko quần đùi dài fixie nhiếp ảnh bài tập về nhà linh hoạt cà phê nguồn gốc đơn. Banksy, nhà phát triển và freegan hàng loạt nhỏ. Khối lượng hoa nhài. Khi kéo ra tia EUR con chuột lố bịch</p>
                                 <Link to="/services">VIEW OUR SERVICES</Link>
                             </div>
                         </Col>
@@ -117,11 +110,7 @@ export default class Home extends Component {
                         <Col lg="6">
                             <div className="secret_text">
                                 <h2>Luôn làm hài lòng khách hàng</h2>
-                                <p>Drinking vinegar stumptown yr pop-up artisan sunt. Deep v
-                                cliche lomo biodiesel Neutra selfies. Shorts fixie consequat
-                                flexitarian four loko tempor duis single-origin coffee. Banksy,
-                                elit small batch freegan sed. Aenean massa. Cum sociis natoque
-                        penatibus eur ridiculus mus</p>
+                                <p>Uống dấm stumptown y pop-up là nghệ nhân. Cả selfie deep V sáo rỗng lomo biodiesel. Bốn Loko quần đùi dài fixie nhiếp ảnh bài tập về nhà linh hoạt cà phê nguồn gốc đơn. Banksy, nhà phát triển và freegan hàng loạt nhỏ. Khối lượng hoa nhài. Khi kéo ra tia EUR con chuột lố bịch</p>
                                 <Link to="/services">VIEW OUR SERVICES</Link>
                             </div>
                         </Col>

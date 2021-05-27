@@ -34,7 +34,7 @@ function Sidebar(props) {
                                 <i className="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
                                     <Link to="/admin/home">
-                                        Dashboard
+                                        Trang chủ
                                     </Link>
 
                                 </p>
@@ -47,7 +47,7 @@ function Sidebar(props) {
                                 <i className="nav-icon fab fa-product-hunt"></i>
                                 <p>
                                     <Link to="/admin/product">
-                                        Product
+                                        Sản phẩm
                                     </Link>
 
                                 </p>
@@ -61,7 +61,7 @@ function Sidebar(props) {
                                 <i className="nav-icon fas fa-home"></i>
                                 <p>
                                     <Link to="/admin/category">
-                                        Category
+                                        Thể loại
                                     </Link>
 
                                 </p>
@@ -76,7 +76,7 @@ function Sidebar(props) {
                                 <i className="nav-icon fa fa-cart-plus"></i>
                                 <p>
                                     <Link to="/admin/order">
-                                        Order
+                                        Hóa đơn
                                     </Link>
 
                                 </p>
@@ -88,7 +88,7 @@ function Sidebar(props) {
                                 <i className="nav-icon fa fa-user"></i>
                                 <p>
                                     <Link to="/admin/user">
-                                        User
+                                       Người dùng
                                     </Link>
 
                                 </p>
@@ -101,7 +101,7 @@ function Sidebar(props) {
                                 <i className="nav-icon fas fa-file-invoice-dollar"></i>
                                 <p>
                                     <Link to="/admin/bill">
-                                        Bills
+                                        Đơn đặt lịch
                                     </Link>
 
                                 </p>
@@ -113,7 +113,7 @@ function Sidebar(props) {
                                 <i className="nav-icon fas fa-spa"></i>
                                 <p>
                                     <Link to="/admin/services">
-                                        Services
+                                        Dịch vụ
                                     </Link>
 
                                 </p>
@@ -125,7 +125,7 @@ function Sidebar(props) {
                                 <i className="nav-icon fas fa-chart-pie"></i>
                                 <p>
                                     <Link to="/admin/statistical">
-                                        Statistical
+                                        THống kê
                                     </Link>
 
                                 </p>

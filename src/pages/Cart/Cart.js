@@ -115,12 +115,14 @@ function Cart(props) {
         setShow(false)
     }
     function handleForm(event) {
-        let nam = event.target.name
-        let val = event.target.value;
-        const info = info;
+        const target = event.target;
+        const value = target.type === 'checkbox' ? target.checked : target.value;
+        const name = target.name;
+        // let nam = event.target.name
+        // let val = event.target.value;
         setInfo({
             ...info,
-            [nam]: val
+            [name]: value
         })
 
     }
