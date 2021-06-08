@@ -4,7 +4,7 @@ import {
 
   Route, Switch
 } from "react-router-dom";
-import { PrivateRoute, PublicRouter } from './components/CustomRouter/CustomRouter';
+import { PrivateRoute, PublicRouter, PrivateRouteAdmin } from './components/CustomRouter/CustomRouter';
 import Footer from './components/footer/Footer';
 import Layout from './components/Layout/Layout';
 import Slidebar from './components/slidebar/Slidebar';
@@ -43,18 +43,23 @@ function App() {
         <Router>
           <Switch>
 
-            <PublicRouter path='/admin'>
+            <PrivateRouteAdmin  path='/admin'>
               <Admin />
               <Footer />
-            </PublicRouter>
+            </PrivateRouteAdmin>
 
             <Layout>
               <Switch>
 
                 <PublicRouter exact path='/'>
-                  <Slidebar />
-                  <Home />
+                    <Slidebar />
+                    <Home />
+
                 </PublicRouter>
+
+                <PrivateRoute path='/booking'>
+                  <Booking />
+                </PrivateRoute>
 
                 <PublicRouter exact path='/gallery'>
                   <Slidebar />
@@ -74,9 +79,7 @@ function App() {
                   <About />
                 </PublicRouter>
 
-                <PrivateRoute path='/booking'>
-                  <Booking />
-                </PrivateRoute>
+
 
                 <PublicRouter exact path='/shop'>
                   <Shop />

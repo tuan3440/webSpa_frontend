@@ -51,8 +51,8 @@ export default class Contact extends Component {
 					<div className="col-sm-6 box1">
 						<ul>
 							<li>
-								<h2 className="contact-box-h2-1">Address</h2>
-								<p className="contact-box-p-1">184 Main Street East Perl Habour 8007</p>
+								<h2 className="contact-box-h2-1">Địa chỉ</h2>
+								<p className="contact-box-p-1">184 Lê Thanh Nghị Hai Bà Trưng</p>
 							</li>
 							<li>
 								<p className="contact-box-p-1">Số điện thoại liên hệ 123456777</p>

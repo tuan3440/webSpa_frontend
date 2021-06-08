@@ -172,15 +172,15 @@ export default class ServicesAdmin extends Component {
                         <h2>Dịch vụ</h2>
                         <br />
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addCategory"
-                            onClick={this.toggle1}><i class="fas fa-plus"></i>&ensp;New Service</button>
+                            onClick={this.toggle1}><i class="fas fa-plus"></i>&ensp;Thêm dịch vụ</button>
                         <table className="listBill">
                             <thead>
                                 <tr>
-                                    <th width="20%">Img</th>
-                                    <th width="15%">Service</th>
-                                    <th width="30%">Description</th>
-                                    <th width="15%">Price</th>
-                                    <th width="20%">Action</th>
+                                    <th width="20%">Hình ảnh</th>
+                                    <th width="15%">Dịch vụ</th>
+                                    <th width="30%">Miêu tả</th>
+                                    <th width="15%">Giá</th>
+                                    <th width="20%">Hành động</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -190,7 +190,7 @@ export default class ServicesAdmin extends Component {
 
                     </div>
                     <Modal isOpen={this.state.isOpenModal} toggle={this.toggle} >
-                        <ModalHeader toggle={this.toggle}><p className="modalHeader">Edit Service</p></ModalHeader>
+                        <ModalHeader toggle={this.toggle}><p className="modalHeader">Sửa </p></ModalHeader>
                         <ModalBody>
                             <form noValidate autoComplete="off">
                                 {this.state.select && <TextField id="filled-basic" style={{ width: '100%' }} defaultValue={select.name} name="service" onChange={this.handleChangeEdit} label="Service" variant="filled" />}
@@ -210,7 +210,7 @@ export default class ServicesAdmin extends Component {
 
                     {/* modal new service */}
                     <Modal isOpen={this.state.isOpenModal1} toggle={this.toggle1} >
-                        <ModalHeader toggle={this.toggle1}><p className="modalHeader">New service</p></ModalHeader>
+                        <ModalHeader toggle={this.toggle1}><p className="modalHeader">Dịch vụ mới</p></ModalHeader>
                         <ModalBody>
                             <form noValidate autoComplete="off">
                                 <TextField id="filled-basic" style={{ width: '100%' }} name="newService" onChange={this.handleChangeNew} label="Service" variant="filled" />

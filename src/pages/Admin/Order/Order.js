@@ -132,13 +132,13 @@ export default class Order extends Component {
                             <thead>
                                 <tr>
                                     <th>ID</th>
-                                    <th>Name</th>
-                                    <th>Date</th>
-                                    <th>Phone</th>
-                                    <th>Address</th>
-                                    <th>Money</th>
-                                    <th>Status</th>
-                                    <th>Action</th>
+                                    <th>Tên</th>
+                                    <th>Ngày đặt</th>
+                                    <th>SỐ điện thoại</th>
+                                    <th>Địa chỉ</th>
+                                    <th>Số tiền</th>
+                                    <th>Trạng thái</th>
+                                    <th>Hành động</th>
                                 </tr>
                             </thead>
                             <tbody>

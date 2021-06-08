@@ -138,7 +138,7 @@ export default class Order extends Component {
             <div>
                 <div className="overlay_background" style={{ backgroundImage: "url(https://themegoods-cdn-pzbycso8wng.stackpathdns.com/grandspa/demo/wp-content/uploads/2017/02/369127.jpg)" }} >
                     <div className='overlay_background1'>
-                        <h2>History Order</h2>
+                        <h2>Lịch sử đơn hàng</h2>
                     </div>
                 </div>
                 <div class="order-admin container-fluid" style={{ marginTop: "40px" }}>

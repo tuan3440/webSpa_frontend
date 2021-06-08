@@ -116,8 +116,8 @@ export default class Category extends Component {
                         <thead>
                             <tr>
                                 <th>ID</th>
-                                <th>Name</th>
-                                <th>Action</th>
+                                <th>Tên thể loại</th>
+                                <th>Hành động</th>
                             </tr>
                         </thead>
                         <tbody>

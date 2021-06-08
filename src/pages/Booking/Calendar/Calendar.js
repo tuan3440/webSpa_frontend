@@ -182,7 +182,8 @@ class Calendar extends Component {
               minDate={new Date(now.getFullYear(), now.getMonth(), now.getDate())}
               maxDate={new Date(now.getFullYear(), now.getMonth(), now.getDate() + 10)}
             />
-
+<br/>
+<br/>
             <Modal isOpen={this.state.isOpenModal} toggle={this.toggle} >
               <ModalHeader toggle={this.toggle}><p className="modalHeader">Available Appointments on</p> {moment(this.state.date).format("MMM Do YY")}</ModalHeader>
               <ModalBody>

@@ -129,11 +129,11 @@ function User(props) {
                         <thead>
                             <tr>
                                 <th>ID</th>
-                                <th>Name</th>
+                                <th>Tên</th>
                                 <th>Email</th>
-                                <th>Phone</th>
-                                <th>Address</th>
-                                <th>Action</th>
+                                <th>Số điện thoại</th>
+                                <th>Địa chỉ</th>
+                                <th>Hành động</th>
                             </tr>
                         </thead>
                         <tbody>

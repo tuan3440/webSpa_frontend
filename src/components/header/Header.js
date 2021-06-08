@@ -143,7 +143,7 @@ class Header1 extends Component {
 							</Link>
 
 							{!user.isLogin && <div className="menu-log">
-								<Link class="menu-login" to="/login">Login</Link>
+								<Link class="menu-login" to="/login">Đăng nhập</Link>
 							</div>
 							}
 

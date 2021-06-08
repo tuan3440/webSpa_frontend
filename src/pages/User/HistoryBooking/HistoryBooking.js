@@ -84,7 +84,7 @@ export default class HistoryBooking extends Component {
 
                 <div className="overlay_background" style={{ backgroundImage: "url(https://themegoods-cdn-pzbycso8wng.stackpathdns.com/grandspa/demo/wp-content/uploads/2017/02/369127.jpg)" }} >
                     <div className='overlay_background1'>
-                        <h2>History Booking</h2>
+                        <h2>Lịch sử đặt lịch</h2>
                     </div>
                 </div>
 

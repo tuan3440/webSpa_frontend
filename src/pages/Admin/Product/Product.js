@@ -180,7 +180,7 @@ function Product(props) {
                 <div class="product-admin">
 
 
-                    <h2>Sane phẩm</h2>
+                    <h2>Sản phẩm</h2>
                     <br />
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addProduct"
                         onClick={(e) => preAdd()}><i class="fas fa-plus"></i>&ensp;Thêm sản phẩm</button>
@@ -190,12 +190,12 @@ function Product(props) {
                             <thead>
                                 <tr className="">
                                     <th>ID</th>
-                                    <th>Image</th>
-                                    <th>Name</th>
+                                    <th>Ảnh</th>
+                                    <th>Tên sản phẩm</th>
                                     {/* <th>Description</th> */}
-                                    <th>Summary</th>
-                                    <th>Price</th>
-                                    <th>Action</th>
+                                    <th>Mô tả sản phẩm</th>
+                                    <th>Giá</th>
+                                    <th>Hành động</th>
                                 </tr>
                             </thead>
                             <tbody>

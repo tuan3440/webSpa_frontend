@@ -8,7 +8,7 @@ export const UserConsumer = UserContext.Consumer;
 export function UserProvider(props) {
 
     const [isLogin, setIsLogin] = useState(false)
-    const [isAdmin, setIsAdmin] = useState(false)
+    const [isAdmin, setIsAdmin] = useState(localStorage.isAdmin  || false)
     const [firstName, setFirstName] = useState('')
 
     function Logout() {
