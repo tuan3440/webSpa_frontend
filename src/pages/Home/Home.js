@@ -79,7 +79,7 @@ export default class Home extends Component {
                         Giúp bạn có giây phút thư giãn tốt nhất"</h3>
                         </Col>
                         <Col style={{ color: '#666666', fontFamily: 'inherit', fontSize: '16.5px', fontWeight: '450', padding: '55px 20px 55px 20px' }}>
-                            <p>Chỉ cần cho đến chân và phân loại không có chuối, thịt bò có chức năng, không tốn kém. Trên thực tế, Justo, rhoncus ut, unsatdiet a, venenatis vitae, justo. When Pulls Rays Super Bowl núi nascetur` mollis.</p>
+                            <p>Làm đẹp không chỉ đơn giản là sở thích mà còn là đam mê của rất nhiều chị em. Nhưng để làm đẹp thì không chỉ mua, sử dụng các sản phẩm chăm sóc da, chăm sóc dáng là đủ, mà còn cần phải sử dụng những biện pháp chuyên sâu, đặc biệt để tác động đến tận sâu bên trong của làn da, cơ thể.</p>
                         </Col>
                     </Row>
 
@@ -95,7 +95,7 @@ export default class Home extends Component {
                         <Col lg="6">
                             <div className="secret_text">
                                 <h2>Bí mật thư giãn</h2>
-                                <p>Uống dấm stumptown y pop-up là nghệ nhân. Cả selfie deep V sáo rỗng lomo biodiesel. Bốn Loko quần đùi dài fixie nhiếp ảnh bài tập về nhà linh hoạt cà phê nguồn gốc đơn. Banksy, nhà phát triển và freegan hàng loạt nhỏ. Khối lượng hoa nhài. Khi kéo ra tia EUR con chuột lố bịch</p>
+                                <p>Làm đẹp không chỉ đơn giản là sở thích mà còn là đam mê của rất nhiều chị em. Nhưng để làm đẹp thì không chỉ mua, sử dụng các sản phẩm chăm sóc da, chăm sóc dáng là đủ, mà còn cần phải sử dụng những biện pháp chuyên sâu, đặc biệt để tác động đến tận sâu bên trong của làn da, cơ thể.</p>
                                 <Link to="/services">VIEW OUR SERVICES</Link>
                             </div>
                         </Col>
@@ -110,8 +110,7 @@ export default class Home extends Component {
                         <Col lg="6">
                             <div className="secret_text">
                                 <h2>Luôn làm hài lòng khách hàng</h2>
-                                <p>Uống dấm stumptown y pop-up là nghệ nhân. Cả selfie deep V sáo rỗng lomo biodiesel. Bốn Loko quần đùi dài fixie nhiếp ảnh bài tập về nhà linh hoạt cà phê nguồn gốc đơn. Banksy, nhà phát triển và freegan hàng loạt nhỏ. Khối lượng hoa nhài. Khi kéo ra tia EUR con chuột lố bịch</p>
-                                <Link to="/services">VIEW OUR SERVICES</Link>
+<p>Làm đẹp không chỉ đơn giản là sở thích mà còn là đam mê của rất nhiều chị em. Nhưng để làm đẹp thì không chỉ mua, sử dụng các sản phẩm chăm sóc da, chăm sóc dáng là đủ, mà còn cần phải sử dụng những biện pháp chuyên sâu, đặc biệt để tác động đến tận sâu bên trong của làn da, cơ thể.</p>                                <Link to="/services">VIEW OUR SERVICES</Link>
                             </div>
                         </Col>
                     </Row>
